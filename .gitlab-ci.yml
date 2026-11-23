@@ -3,6 +3,7 @@ pages:
   script:
     - mkdir -p public
     - cp index.html public/index.html
+  pages: true
   artifacts:
     paths:
       - public
