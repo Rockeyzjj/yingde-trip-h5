@@ -208,6 +208,9 @@
   .stop2 .detail-inner{border-top:1px dashed var(--hairline);padding-top:11px;font-size:13px;color:var(--ink-soft)}
   .stop2.open .detail{max-height:700px;opacity:1;margin-top:11px}
   .stop2 .price{margin-top:8px}
+  .car-plan{display:grid;gap:6px;margin-top:10px;padding:9px 11px;background:var(--sage-glow);border:1px solid #D7E3D2;border-radius:10px}
+  .car-row{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft);line-height:1.45}
+  .car-label{flex:none;min-width:38px;padding:2px 7px;border-radius:999px;background:var(--paper);border:1px solid var(--hairline-soft);color:var(--sage-deep);font:600 10px var(--mono);text-align:center}
   @media(max-width:420px){.stop2{grid-template-columns:40px 4px 12px 4px minmax(0,1fr)}.rail2:before{left:5.5px}.dot2{left:2px}.tcol .s{font-size:10.5px}.card2{padding:13px}}
 
   /* ===== todo + wishlist ===== */
@@ -318,8 +321,12 @@
         <div></div><div class="rail2"><span class="dot2"></span></div><div></div>
         <div class="card2">
           <div class="card-top" data-toggle>
-            <div class="card-title"><div class="cat">MEET DRIVE</div><h3>深圳各车出发 · 直奔野渡谷</h3><p>目的地：野有咖啡 · 野渡谷店</p></div>
+            <div class="card-title"><div class="cat">MEET DRIVE</div><h3>深圳各车出发 · 直奔野渡谷</h3><p>2 台车 · 3 + 3 · 直接导航野有咖啡</p></div>
             <div class="chev2">⌄</div>
+          </div>
+          <div class="car-plan" aria-label="车辆乘坐分配">
+            <div class="car-row"><span class="car-label">车 1</span><span>范老师 · Bobby · 宇姐</span></div>
+            <div class="car-row"><span class="car-label">车 2</span><span>果子 · 瑞轩 · 子俊</span></div>
           </div>
           <div class="detail"><div class="detail-inner"><p>各车 12:00 出发并直接导航「野有咖啡 野渡谷店」，中途只在服务区上洗手间、补电或短暂休息，不安排集体午餐。</p><p class="muted">预计 14:50 左右到达；先到的人直接进咖啡店等。</p></div></div>
         </div>
